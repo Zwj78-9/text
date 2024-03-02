@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"can111\startup_stm32f103xb.o"
+"can111\can_fileinit.o"
+"can111\main.o"
+"can111\gpio.o"
+"can111\can.o"
+"can111\stm32f1xx_it.o"
+"can111\stm32f1xx_hal_msp.o"
+"can111\stm32f1xx_hal_gpio_ex.o"
+"can111\stm32f1xx_hal_can.o"
+"can111\stm32f1xx_hal.o"
+"can111\stm32f1xx_hal_rcc.o"
+"can111\stm32f1xx_hal_rcc_ex.o"
+"can111\stm32f1xx_hal_gpio.o"
+"can111\stm32f1xx_hal_dma.o"
+"can111\stm32f1xx_hal_cortex.o"
+"can111\stm32f1xx_hal_pwr.o"
+"can111\stm32f1xx_hal_flash.o"
+"can111\stm32f1xx_hal_flash_ex.o"
+"can111\stm32f1xx_hal_exti.o"
+"can111\stm32f1xx_hal_tim.o"
+"can111\stm32f1xx_hal_tim_ex.o"
+"can111\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "can111\can111.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "can111.map" -o can111\can111.axf
